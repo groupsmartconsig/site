@@ -15,10 +15,10 @@ import Link from "next/link";
 export function Footer() {
   return (
     <ShineBorder
-      className="bg-black h-96 max-w-7xl w-full mx-auto relative flex flex-col items-center justify-center border border-red-400 overflow-hidden rounded-xl md:shadow-xl"
-      color={["#c00", "#FE8FB5", "#FFBE7B"]}
+      className="bg-black h-96 w-full relative flex flex-col items-center justify-center border border-red-400 overflow-hidden rounded-xl md:shadow-xl"
+      color={["#c00", "#ef233c", "#fb8500"]}
     >
-      <div className="z-10 w-full flex justify-between items-center px-12">
+      <div className="z-10 w-full flex justify-between items-center px-16">
         <div className="flex flex-col space-y-6">
           <Image
             src={logo}

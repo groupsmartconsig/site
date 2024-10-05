@@ -4,8 +4,8 @@ import logo from "@/app/assets/images/logo.png";
 import Image from 'next/image';
 import Link from 'next/link';
 
+import { ShimmerButtonLink } from "@/components/motions/shimmer-button";
 import { motion } from 'framer-motion';
-import { ShimmerButtonLink } from "../components/motions/shimmer-button";
 
 export function Header() {
   return (
