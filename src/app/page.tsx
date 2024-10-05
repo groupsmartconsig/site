@@ -1,3 +1,4 @@
+import { AnimatedBeamCard } from "@/components/motions/animated-beam-card";
 import { BoxRevealContainer } from "@/components/motions/box-reveal-container";
 import { MainContainer } from "@/components/motions/main-container";
 import { PortabilityContainer } from "@/components/motions/portability-container";
@@ -10,6 +11,7 @@ export default function Home() {
       <MainContainer />
       <div className="max-w-6xl w-full mx-auto grid grid-cols-2 items-center py-28">
         <BoxRevealContainer />
+        <AnimatedBeamCard />
       </div>
       <div className="max-w-6xl w-full mx-auto pb-16">
         <FaqAccordion />
