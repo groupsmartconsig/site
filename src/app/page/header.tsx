@@ -4,7 +4,7 @@ import logo from "@/app/assets/images/logo.png";
 import Image from 'next/image';
 import Link from 'next/link';
 
-import { ShimmerButtonLink } from "@/components/motions/shimmer-button";
+import { ShimmerButtonDialog } from "@/components/motions/shimmer-button-dialog";
 import { motion } from 'framer-motion';
 
 export function Header() {
@@ -44,7 +44,7 @@ export function Header() {
         </Link>
       </nav>
       
-      <ShimmerButtonLink />
+      <ShimmerButtonDialog title="Fale conosco" />
     </motion.div>
   );
 }
