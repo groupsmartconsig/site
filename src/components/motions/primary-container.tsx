@@ -10,7 +10,7 @@ import Image from 'next/image';
 
 export function PrimaryContainer() {
   return (
-    <div className="p-8 bg-gradient-to-br from-black via-zinc-950 to-zinc-900">
+    <div className="pt-8 pb-16 bg-gradient-to-br from-black via-stone-950 to-zinc-900">
       <Header />
       <div className="pt-20 flex flex-col items-center overflow-hidden">
         <div className="max-w-2xl w-full py-12 flex flex-col justify-center text-white">

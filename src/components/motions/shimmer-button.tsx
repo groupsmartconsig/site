@@ -4,7 +4,7 @@ import Link from "next/link";
 export function ShimmerButtonLink() {
   return (
     <Link href="#" className="z-10 flex items-center justify-center">
-      <ShimmerButton className="shadow-2xl shadow-zinc-700">
+      <ShimmerButton className="shadow-2xl shadow-lime-900">
         <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-lime-300">
           Fale conosco
         </span>
