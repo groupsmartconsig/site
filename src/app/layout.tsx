@@ -51,7 +51,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body
-        className={`${montserrat.className} antialiased bg-black`}
+        className={`${montserrat.className} antialiased bg-gradient-to-br from-black via-zinc-950 to-stone-950`}
       >
         {children}
       </body>
