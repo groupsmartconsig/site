@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div>
       <MainContainer />
-      <div className="max-w-6xl w-full mx-auto grid grid-cols-2 items-center py-28">
+      <div className="max-w-6xl w-full mx-auto grid grid-cols-2 items-center pb-28">
         <BoxRevealContainer />
         <AnimatedBeamCard />
       </div>

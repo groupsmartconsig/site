@@ -40,8 +40,8 @@ export function AnimatedBeamCard() {
       <div className="flex flex-col items-center space-y-3 pb-10">
         <h5 className="flex items-center gap-2 text-2xl font-medium text-primary-red">
           <LockIcon className="size-6" />
-          <strong className="text-white">100%</strong> {""}
-          seguro, portabilidade é aqui
+          <strong className="text-white">100% seguro,</strong> {""}
+          portabilidade é aqui
         </h5>
         <p className="text-white">
           Nossa empresa é regularizada pela ANEPS e autorizada pelo BACEN para atuar como correspondente bancário, assegurando a segurança e a legalidade dos nossos serviços.

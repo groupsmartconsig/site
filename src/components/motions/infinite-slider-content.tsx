@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export function InfiniteSliderContent() {
   return (
-    <InfiniteSlider gap={24} reverse>
+    <InfiniteSlider className="pt-12" gap={24} reverse>
       <Image
         src="/banrisul.png"
         alt="Banco banrisul"
