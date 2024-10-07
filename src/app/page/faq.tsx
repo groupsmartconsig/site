@@ -11,10 +11,10 @@ import AnimatedGridPattern from "@/components/ui/animated-grid-pattern";
 export function FaqAccordion() {
   return (
     <div
-      className="bg-black h-[540px] w-full relative flex flex-col items-center justify-center border overflow-hidden rounded-xl md:shadow-xl"
+      className="bg-black h-[540px] w-full relative flex flex-col items-center justify-center border border-zinc-800 overflow-hidden rounded-xl md:shadow-xl"
     >
       <div className="w-full flex flex-col space-y-12">
-        <p className="z-10 whitespace-pre-wrap text-center text-4xl font-medium tracking-tighter text-primary-red md:text-5xl">
+        <p className="z-10 whitespace-pre-wrap text-center text-4xl font-medium tracking-tighter bg-gradient-to-b from-[#f48c06] via-[#f42f36] to-[#ec3237] bg-clip-text text-transparent md:text-5xl">
           <strong className="text-3xl">FAQ</strong><br />
           Perguntas e respostas
         </p>

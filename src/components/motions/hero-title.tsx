@@ -62,7 +62,7 @@ export function HeroTitle() {
 
       <div className="relative z-10 w-full pb-10">
         <motion.h1
-          className="text-2xl font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-b from-danger-red via-red-500 to-primary-red px-4 mb-4 md:text-3xl md:px-0"
+          className="text-2xl font-extrabold text-center bg-gradient-to-b from-[#f48c06] via-[#f42f36] to-[#ec3237] bg-clip-text text-transparent px-4 mb-4 md:text-3xl md:px-0"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
