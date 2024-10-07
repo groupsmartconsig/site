@@ -93,7 +93,7 @@ export function PortabilityExample() {
           Coloque de volta no seu bolso
         </p>
         <span className="text-4xl font-bold text-lime-300">
-          R$ 18.545,98
+          R$ 3.042,33
         </span>
       </div>
       <DotPattern
