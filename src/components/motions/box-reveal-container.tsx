@@ -3,21 +3,21 @@ import { ShimmerButtonDialog } from "./shimmer-button-dialog";
 
 export async function BoxRevealContainer() {
   return (
-    <div className="size-full max-w-lg items-center justify-center overflow-hidden text-white">
-      <BoxReveal boxColor={"#1d1d1d"} duration={0.5}>
-        <p className="text-[3.5rem] font-semibold">
+    <div className="size-full w-full items-center justify-center overflow-hidden text-white px-4 md:max-w-lg md:px-0">
+      <BoxReveal boxColor={"#18181b"} duration={0.5}>
+        <p className="text-3xl font-semibold pl-6 md:text-[3.5rem] md:pl-0">
           Quais são os benefícios<span className="text-[#ec3237]">?</span>
         </p>
       </BoxReveal>
 
-      <BoxReveal boxColor={"#1d1d1d"} duration={0.5}>
+      <BoxReveal boxColor={"#18181b"} duration={0.5}>
         <h2 className="mt-[.5rem] text-[1rem]">
           Nossos clientes possuem diversas{" "}
           <span className="text-[#ec3237]">vantagens</span>
         </h2>
       </BoxReveal>
 
-      <BoxReveal boxColor={"#1d1d1d"} duration={0.5}>
+      <BoxReveal boxColor={"#18181b"} duration={0.5}>
         <ol className="pt-6 list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
           <li className="mb-2">
             Ao realizar a Portabilidade conosco, você automaticamente consegue um {""}
@@ -56,8 +56,8 @@ export async function BoxRevealContainer() {
         </ol>
       </BoxReveal>
 
-      <BoxReveal boxColor={"#1d1d1d"} duration={0.5}>
-        <div className="pt-6">
+      <BoxReveal boxColor={"#18181b"} duration={0.5}>
+        <div className="pl-28 pt-6 md:pl-0">
           <ShimmerButtonDialog title="Faça uma simulação" />
         </div>
       </BoxReveal>

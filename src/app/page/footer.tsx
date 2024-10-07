@@ -19,7 +19,7 @@ export function Footer() {
       color={["#c00", "#ef233c", "#fb8500"]}
     >
       <div className="z-10 w-full flex justify-between items-center px-16">
-        <div className="flex flex-col space-y-6">
+        <div className="hidden sm:flex flex-col space-y-6">
           <Image
             src={logo}
             width={140}

@@ -14,11 +14,11 @@ export function FaqAccordion() {
       className="bg-black h-[540px] w-full relative flex flex-col items-center justify-center border overflow-hidden rounded-xl md:shadow-xl"
     >
       <div className="w-full flex flex-col space-y-12">
-        <p className="z-10 whitespace-pre-wrap text-center text-5xl font-medium tracking-tighter text-primary-red">
+        <p className="z-10 whitespace-pre-wrap text-center text-4xl font-medium tracking-tighter text-primary-red md:text-5xl">
           <strong className="text-3xl">FAQ</strong><br />
           Perguntas e respostas
         </p>
-        <Accordion type="single" collapsible className="max-w-3xl w-full mx-auto text-white pb-6">
+        <Accordion type="single" collapsible className="w-full mx-auto text-white px-3 pb-6 md:max-w-3xl md:px-0">
           <AccordionItem value="item-1">
             <AccordionTrigger>É necessário pagar alguma taxa adicional?</AccordionTrigger>
             <AccordionContent className="whitespace-pre-line">

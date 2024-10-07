@@ -9,14 +9,14 @@ export default function Home() {
   return (
     <div>
       <MainContainer />
-      <div className="max-w-6xl w-full mx-auto grid grid-cols-2 items-center pb-28">
+      <div className="max-w-6xl w-full mx-auto grid grid-cols-1 items-center gap-y-16 md:grid-cols-2 md:pb-28">
         <BoxRevealContainer />
         <AnimatedBeamCard />
       </div>
-      <div className="max-w-6xl w-full mx-auto pb-16">
+      <div className="max-w-6xl w-full mx-auto pt-12 px-3 md:px-0 md:pt-0 md:pb-16">
         <FaqAccordion />
       </div>
-      <div className="max-w-6xl w-full mx-auto py-8">
+      <div className="max-w-6xl w-full mx-auto py-8 px-4 sm:px-0">
         <PortabilityContainer />
         <Footer />
       </div>

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
+import { Toaster } from "sonner";
 
 import "./globals.css";
 
@@ -12,10 +13,10 @@ export const metadata: Metadata = {
   },
   description: "Portabilidade de empréstimo com liberação de valor",
   keywords: [
-    'finance', 
-    'portability', 
-    'banking', 
-    'money transfer', 
+    'finance',
+    'portability',
+    'banking',
+    'money transfer',
     'account management'
   ],
   authors: [{ name: 'Grupo Smart Consig' }],
@@ -53,7 +54,8 @@ export default function RootLayout({
       <body
         className={`${montserrat.className} antialiased bg-gradient-to-br from-black to-zinc-950`}
       >
-        {children}
+        <main>{children}</main>
+        <Toaster richColors />
       </body>
     </html>
   );

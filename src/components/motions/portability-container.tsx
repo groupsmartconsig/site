@@ -12,11 +12,19 @@ export function PortabilityContainer() {
     <div>
       <div className="pt-12 max-w-5xl w-full mx-auto">
         <GradualSpacing
-          className="font-display text-primary-red text-4xl font-extrabold -tracking-widest md:text-5xl md:leading-[5rem]"
+          className="hidden font-display text-primary-red font-extrabold -tracking-widest sm:block md:text-5xl md:leading-[5rem]"
           text="Portabilidade financeira descomplicada"
         />
+        <motion.h1
+          className="font-display text-3xl text-center text-primary-red font-extrabold -tracking-widest pb-3 sm:hidden"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+        >
+          Portabilidade financeira descomplicada
+        </motion.h1>
         <motion.p
-          className="text-white text-lg text-center"
+          className="text-white text-center px-4 sm:text-lg sm:px-0"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}
