@@ -62,7 +62,7 @@ export function HeroTitle() {
 
       <div className="relative z-10 w-full pb-10">
         <motion.h1
-          className="text-3xl font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-b from-danger-red via-red-500 to-primary-red mb-4"
+          className="text-2xl font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-b from-danger-red via-red-500 to-primary-red px-4 mb-4 md:text-3xl md:px-0"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
@@ -70,7 +70,7 @@ export function HeroTitle() {
           Aposentados e pensionistas do INSS
         </motion.h1>
         <motion.p
-          className="max-w-2xl mx-auto w-full text-5xl text-center text-white "
+          className="max-w-2xl mx-auto w-full text-3xl text-center text-white px-4 md:text-5xl md:px-0"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}
