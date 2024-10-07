@@ -24,7 +24,7 @@ export function PortabilityContainer() {
           Portabilidade financeira descomplicada
         </motion.h1>
         <motion.p
-          className="text-white text-center px-4 sm:text-lg sm:px-0"
+          className="text-white text-center px-2 sm:text-lg sm:px-0"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}
