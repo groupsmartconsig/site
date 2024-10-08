@@ -4,6 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { BorderBeam } from "@/components/ui/border-beam";
 import { cn } from "@/lib/utils";
 
 import AnimatedGridPattern from "@/components/ui/animated-grid-pattern";
@@ -11,13 +12,14 @@ import AnimatedGridPattern from "@/components/ui/animated-grid-pattern";
 export function FaqAccordion() {
   return (
     <div
-      className="bg-black h-[540px] w-full relative flex flex-col items-center justify-center border border-zinc-800 overflow-hidden rounded-xl md:shadow-xl"
+      className="bg-black h-[540px] w-full relative flex flex-col items-center justify-center border-2 border-zinc-700 overflow-hidden rounded-xl md:shadow-xl"
     >
       <div className="w-full flex flex-col space-y-12">
         <p className="z-10 whitespace-pre-wrap text-center text-4xl font-medium tracking-tighter bg-gradient-to-b from-[#f48c06] via-[#f42f36] to-[#ec3237] bg-clip-text text-transparent md:text-5xl">
           <strong className="text-3xl">FAQ</strong><br />
           Perguntas e respostas
         </p>
+        
         <Accordion type="single" collapsible className="w-full mx-auto text-white px-3 pb-6 md:max-w-3xl md:px-0">
           <AccordionItem value="item-1">
             <AccordionTrigger>É necessário pagar alguma taxa adicional?</AccordionTrigger>
@@ -51,6 +53,7 @@ export function FaqAccordion() {
           </AccordionItem>
         </Accordion>
       </div>
+
       <AnimatedGridPattern
         numSquares={30}
         maxOpacity={0.1}
@@ -61,6 +64,7 @@ export function FaqAccordion() {
           "inset-x-0 inset-y-[-30%] h-[200%] skew-y-12",
         )}
       />
+      <BorderBeam size={250} duration={12} delay={9} />
     </div>
   )
 }

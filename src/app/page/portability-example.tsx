@@ -1,13 +1,14 @@
 "use client";
 
+import { BorderBeam } from "@/components/ui/border-beam";
 import { DotPattern } from "@/components/ui/dot-pattern";
 import { cn } from "@/lib/utils";
 import { InfoIcon } from "lucide-react";
 
 export function PortabilityExample() {
   return (
-    <div className="relative flex h-[720px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border border-zinc-800 bg-black md:shadow-xl">
-      <p className="z-10 flex items-center gap-3 whitespace-pre-wrap text-3xl font-medium tracking-tighter text-white">
+    <div className="bg-gradient-to-br from-black to-zinc-900 relative flex h-[720px] w-full flex-col items-center justify-center overflow-hidden border-2 border-zinc-700 rounded-xl md:shadow-xl">
+      <p className="z-10 flex items-center gap-3 whitespace-pre-wrap text-3xl font-medium tracking-tighter text-white pt-6">
         <InfoIcon className="size-8" />
         Exemplo de operação
       </p>
@@ -36,7 +37,7 @@ export function PortabilityExample() {
             <small className="tex-lg font-medium text-white">
               Reduzida
             </small>
-            <span className="text-2xl font-bold text-lime-300">
+            <span className="text-2xl font-bold text-green-400">
               R$ 150,00
             </span>
           </div>
@@ -59,7 +60,7 @@ export function PortabilityExample() {
             <small className="tex-lg font-medium text-white">
               Reduzidas
             </small>
-            <span className="text-2xl font-bold text-lime-300">
+            <span className="text-2xl font-bold text-green-400">
               60 parcelas
             </span>
           </div>
@@ -82,7 +83,7 @@ export function PortabilityExample() {
             <small className="tex-lg font-medium text-white">
               Reduzidas
             </small>
-            <span className="text-2xl font-bold text-lime-300">
+            <span className="text-2xl font-bold text-green-400">
               1,38% a.m.
             </span>
           </div>
@@ -92,7 +93,7 @@ export function PortabilityExample() {
         <p className="text-white text-2xl font-medium">
           Coloque de volta no seu bolso
         </p>
-        <span className="text-4xl font-bold text-lime-300">
+        <span className="text-4xl font-bold text-green-400">
           R$ 3.042,33
         </span>
       </div>
@@ -101,6 +102,7 @@ export function PortabilityExample() {
           "[mask-image:radial-gradient(300px_circle_at_center,white,transparent)]",
         )}
       />
+      <BorderBeam size={250} duration={12} delay={9} />
     </div>
   );
 }

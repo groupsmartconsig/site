@@ -1,3 +1,4 @@
+import { BorderBeam } from "@/components/ui/border-beam";
 import { DotPattern } from "@/components/ui/dot-pattern";
 import { cn } from "@/lib/utils";
 import {
@@ -8,16 +9,12 @@ import {
 } from "lucide-react";
 
 import logo from "@/app/assets/images/logo.png";
-import ShineBorder from "@/components/ui/shine-border";
 import Image from "next/image";
 import Link from "next/link";
 
 export function Footer() {
   return (
-    <ShineBorder
-      className="bg-black h-96 w-full relative flex flex-col items-center justify-center border border-red-400 overflow-hidden rounded-xl md:shadow-xl"
-      color={["#c00", "#ef233c", "#fb8500"]}
-    >
+    <div className="bg-black h-96 w-full relative flex flex-col items-center justify-center border-2 border-zinc-700 overflow-hidden rounded-xl mt-12 md:shadow-xl">
       <div className="z-10 w-full flex justify-between items-center px-16">
         <div className="hidden sm:flex flex-col space-y-6">
           <Image
@@ -90,6 +87,7 @@ export function Footer() {
           "[mask-image:radial-gradient(300px_circle_at_center,white,transparent)]",
         )}
       />
-    </ShineBorder>
+      <BorderBeam size={250} duration={12} delay={9} />
+    </div>
   )
 }

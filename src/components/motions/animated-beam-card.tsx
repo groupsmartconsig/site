@@ -5,6 +5,8 @@ import React, { forwardRef, useRef } from "react";
 import { AnimatedBeam } from "@/components/ui/animated-beam";
 import { cn } from "@/lib/utils";
 import { LockIcon } from "lucide-react";
+import { BorderBeam } from "../ui/border-beam";
+import DotPattern from "../ui/dot-pattern";
 
 const Circle = forwardRef<
   HTMLDivElement,
@@ -36,7 +38,7 @@ export function AnimatedBeamCard() {
   const div7Ref = useRef<HTMLDivElement>(null);
 
   return (
-    <div className="bg-gradient-to-br from-black to-zinc-900 h-[560px] overflow-hidden rounded-lg border border-zinc-800 p-10 mx-3 md:shadow-xl md:h-[500px] md:mx-0">
+    <div className="bg-gradient-to-br from-black to-zinc-900 relative h-[560px] overflow-hidden rounded-lg border-2 border-zinc-700 p-10 mx-3 md:shadow-xl md:h-[500px] md:mx-0">
       <div className="flex flex-col items-center space-y-3 pb-10">
         <h5 className="flex items-center gap-2 text-2xl font-medium text-primary-red">
           <LockIcon className="size-6" />
@@ -124,6 +126,13 @@ export function AnimatedBeamCard() {
           reverse
         />
       </div>
+      
+      <DotPattern
+        className={cn(
+          "[mask-image:radial-gradient(300px_circle_at_center,white,transparent)]",
+        )}
+      />
+      <BorderBeam size={250} duration={12} delay={9} />
     </div>
   );
 }

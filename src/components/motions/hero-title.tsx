@@ -1,11 +1,12 @@
 "use client"
 
 import { motion } from 'framer-motion';
-import { InfiniteSliderContent } from './infinite-slider-content';
+import RetroGrid from '../ui/retro-grid';
+import { ShimmerButtonDialog } from './shimmer-button-dialog';
 
 export function HeroTitle() {
   return (
-    <div className="relative w-full h-[460px] flex items-center justify-center overflow-hidden bg-transparent">
+    <div className="relative w-full h-[500px] flex items-center justify-center overflow-hidden">
       <style jsx>
         {`
           @keyframes pulse {
@@ -31,10 +32,10 @@ export function HeroTitle() {
         <div
           className="gradient-spot"
           style={{
-            top: '6%',
-            left: '75%',
-            width: '16rem',
-            height: '16rem',
+            bottom: '60%',
+            left: '80%',
+            width: '12rem',
+            height: '12rem',
             background: 'radial-gradient(circle, rgba(204, 0, 0, 1) 0%, rgba(168, 85, 247, 0) 70%)',
           }}
         ></div>
@@ -51,7 +52,7 @@ export function HeroTitle() {
         <div
           className="gradient-spot"
           style={{
-            top: '50%',
+            bottom: '35%',
             left: '5%',
             width: '20rem',
             height: '20rem',
@@ -60,9 +61,9 @@ export function HeroTitle() {
         ></div>
       </div>
 
-      <div className="relative z-10 w-full pb-10">
+      <div className="relative z-10 w-full pb-12">
         <motion.h1
-          className="text-2xl font-extrabold text-center bg-gradient-to-b from-[#f48c06] via-[#f42f36] to-[#ec3237] bg-clip-text text-transparent px-4 mb-4 md:text-3xl md:px-0"
+          className="text-2xl text-center bg-gradient-to-b from-[#f48c06] via-[#f42f36] to-[#ec3237] bg-clip-text text-transparent px-4 mb-4 md:text-3xl md:px-0"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
@@ -70,15 +71,26 @@ export function HeroTitle() {
           Aposentados e pensionistas do INSS
         </motion.h1>
         <motion.p
-          className="max-w-2xl mx-auto w-full text-3xl text-center text-white px-4 md:text-5xl md:px-0"
+          className="max-w-2xl mx-auto w-full font-bold text-3xl text-center text-white px-4 md:text-5xl md:px-0"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}
         >
           Redução de juros e parcela com liberação de valor
         </motion.p>
-        <InfiniteSliderContent />
+
+        <motion.div
+          className="pt-16"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+        >
+          <ShimmerButtonDialog 
+            title="Quero fazer minha simulação agora" 
+          />
+        </motion.div>
       </div>
+      <RetroGrid />
     </div>
   )
 }

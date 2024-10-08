@@ -1,9 +1,10 @@
 import BoxReveal from "@/components/ui/box-reveal";
+import { Share2Icon } from "lucide-react";
 import { ShimmerButtonDialog } from "./shimmer-button-dialog";
 
 export async function BoxRevealContainer() {
   return (
-    <div className="size-full w-full items-center justify-center overflow-hidden text-white px-4 md:max-w-lg md:px-0">
+    <div className="size-full w-full items-center justify-center overflow-hidden text-black px-4 md:max-w-lg md:px-0">
       <BoxReveal boxColor={"#18181b"} duration={0.5}>
         <p className="text-3xl font-semibold pl-6 leading-snug md:text-[3.5rem] md:pl-0">
           Quais são os benefícios<span className="text-[#ec3237]">?</span>
@@ -58,7 +59,10 @@ export async function BoxRevealContainer() {
 
       <BoxReveal boxColor={"#18181b"} duration={0.5}>
         <div className="pl-28 pt-6 md:pl-0">
-          <ShimmerButtonDialog title="Faça uma simulação" />
+          <ShimmerButtonDialog 
+            title="Realize uma simulação gratuita"
+            icon={<Share2Icon className="size-4 text-green-400" />}
+          />
         </div>
       </BoxReveal>
     </div>
