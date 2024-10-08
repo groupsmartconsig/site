@@ -20,7 +20,7 @@ export function Stepper({
   return (
     <StepperContext.Provider value={{ previousStep, nextStep }}>
       <div>
-        <h1>Passo 1</h1>
+        {steps[currentStep]?.content}
       </div>
     </StepperContext.Provider>
   )

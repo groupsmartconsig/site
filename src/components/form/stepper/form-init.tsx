@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import {
   DialogDescription,
@@ -11,6 +10,7 @@ import { RocketIcon } from "lucide-react";
 
 import portabilityBanner from "@/app/assets/images/banner.png";
 import Image from "next/image";
+import { NextStepButton } from "./next-step";
 
 export function FormInit() {
   return (
@@ -28,7 +28,7 @@ export function FormInit() {
           </DialogDescription>
         </DialogHeader>
       </div>
-      <div className="w-full flex flex-col space-y-6 py-4 px-8">
+      <div className="w-full flex flex-col space-y-6 pt-4 pb-6 px-8">
         <div className="w-full h-52">
           <Image
             src={portabilityBanner}
@@ -44,16 +44,12 @@ export function FormInit() {
         </div>
       </div>
       <Separator />
-      <DialogFooter className="w-full pt-2 pb-0 px-8">
-        <div className="flex items-center space-x-3 pr-16">
-          <button type="button" className="h-2 w-2 bg-primary-red rounded-full"></button>
-          <button type="button" className="h-2 w-2 bg-gray-300 rounded-full"></button>
-          <button type="button" className="h-2 w-2 bg-gray-300 rounded-full"></button>
-        </div>
+      <DialogFooter className="w-full pt-6 pb-0 px-8">
         <div className="flex justify-end items-center">
-          <Button className="font-medium px-6 rounded-full hover:text-lime-300">
-            Vamos começar?
-          </Button>
+          <NextStepButton
+            title="Vamos começar?" 
+            className="font-medium px-6 rounded-full hover:text-lime-300"
+          />
         </div>
       </DialogFooter>
     </>

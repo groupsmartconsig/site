@@ -55,7 +55,7 @@ export default function RootLayout({
         className={`${montserrat.className} antialiased bg-gradient-to-br from-black to-zinc-950`}
       >
         <main>{children}</main>
-        <Toaster richColors />
+        <Toaster position="top-center" richColors />
       </body>
     </html>
   );
