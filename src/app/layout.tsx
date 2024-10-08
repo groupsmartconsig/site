@@ -13,11 +13,11 @@ export const metadata: Metadata = {
   },
   description: "Portabilidade de empréstimo com liberação de valor",
   keywords: [
-    'finance',
-    'portability',
-    'banking',
-    'money transfer',
-    'account management'
+    'financeiro',
+    'portabilidade',
+    'bancos',
+    'empréstimo',
+    'parcela'
   ],
   authors: [{ name: 'Grupo Smart Consig' }],
   creator: 'FinPort',
