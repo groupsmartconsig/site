@@ -6,7 +6,7 @@ export function MainContainer() {
     <>
       <div className="pt-8">
         <Header />
-        <div className="relative pt-20 flex flex-col items-center overflow-hidden">
+        <div className="relative pt-10 flex flex-col items-center overflow-hidden sm:pt-20">
           <HeroTitle />
         </div>
       </div>

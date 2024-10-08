@@ -38,7 +38,7 @@ export function AnimatedBeamCard() {
   const div7Ref = useRef<HTMLDivElement>(null);
 
   return (
-    <div className="bg-gradient-to-br from-black to-zinc-900 relative h-[560px] overflow-hidden rounded-lg border-2 border-zinc-700 p-10 mx-3 md:shadow-xl md:h-[500px] md:mx-0">
+    <div className="bg-gradient-to-br from-black to-zinc-900 relative h-[600px] overflow-hidden border-2 border-zinc-700 p-10 md:shadow-xl md:h-[500px] md:rounded-lg md:mx-0">
       <div className="flex flex-col items-center space-y-3 pb-10">
         <h5 className="flex items-center gap-2 text-2xl font-medium text-primary-red">
           <LockIcon className="size-6" />

@@ -7,7 +7,7 @@ const httpAuthClient = axios.create({
   },
 });
 
-const tenant = "smartconsig";
+const tenant = process.env.NEXT_PUBLIC_TENANT;
 
 export class AuthService {
   static async signIn(username: string, password: string) {

@@ -11,13 +11,12 @@ export function Header() {
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="flex justify-center items-center max-w-5xl mx-auto w-full py-4"
+      className="w-full flex justify-center items-center py-4"
     >
       <Image
         src={logo}
         width={140}
         height={20}
-        className="pl-4 md:pl-0"
         alt="logo"
         priority
       />

@@ -6,13 +6,13 @@ export async function BoxRevealContainer() {
   return (
     <div className="size-full w-full items-center justify-center overflow-hidden text-black px-4 md:max-w-lg md:px-0">
       <BoxReveal boxColor={"#18181b"} duration={0.5}>
-        <p className="text-3xl font-semibold pl-6 leading-snug md:text-[3.5rem] md:pl-0">
+        <p className="text-4xl text-center font-semibold leading-snug md:text-[3.5rem] md:text-left">
           Quais são os benefícios<span className="text-[#ec3237]">?</span>
         </p>
       </BoxReveal>
 
       <BoxReveal boxColor={"#18181b"} duration={0.5}>
-        <h2 className="mt-[.5rem] text-[1rem]">
+        <h2 className="mt-[.5rem] text-[1rem] px-2 text-center md:px-0 md:text-left">
           Nossos clientes possuem diversas{" "}
           <span className="text-[#ec3237]">vantagens</span>
         </h2>
@@ -58,7 +58,7 @@ export async function BoxRevealContainer() {
       </BoxReveal>
 
       <BoxReveal boxColor={"#18181b"} duration={0.5}>
-        <div className="pl-28 pt-6 md:pl-0">
+        <div className="mt-12 ml-8 sm:ml-0 md:mt-0">
           <ShimmerButtonDialog 
             title="Realize uma simulação gratuita"
             icon={<Share2Icon className="size-4 text-green-400" />}

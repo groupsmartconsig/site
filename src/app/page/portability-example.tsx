@@ -7,9 +7,9 @@ import { InfoIcon } from "lucide-react";
 
 export function PortabilityExample() {
   return (
-    <div className="bg-gradient-to-br from-black to-zinc-900 relative flex h-[720px] w-full flex-col items-center justify-center overflow-hidden border-2 border-zinc-700 rounded-xl md:shadow-xl">
-      <p className="z-10 flex items-center gap-3 whitespace-pre-wrap text-3xl font-medium tracking-tighter text-white pt-6">
-        <InfoIcon className="size-8" />
+    <div className="bg-gradient-to-br from-black to-zinc-900 relative flex h-[760px] w-full flex-col items-center justify-center overflow-hidden border-2 border-zinc-700 px-6 sm:h-[720px] sm:rounded-xl sm:px-0 md:shadow-xl">
+      <p className="z-10 flex items-center gap-3 whitespace-pre-wrap text-2xl font-medium tracking-tighter text-white pt-6 sm:text-3xl">
+        <InfoIcon className="size-7 md:size-8" />
         Exemplo de operação
       </p>
       <div className="flex flex-col items-center py-6">

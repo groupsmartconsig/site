@@ -50,7 +50,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-br">
+    <html lang="pt">
       <body
         className={`${montserrat.className} antialiased bg-gradient-to-br from-black to-zinc-950`}
       >

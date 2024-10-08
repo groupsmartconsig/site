@@ -1,6 +1,8 @@
 import axios from "axios";
 
-const httpClient = axios.create();
+const httpClient = axios.create({
+  baseURL: process.env.NEXT_PUBLIC_PROPOSALS_API,
+});
 
 export class PortabilityService {
   static async getContractsByCustomerDocument(document: string) {
@@ -12,7 +14,7 @@ export class PortabilityService {
       }
 
       const { data } = await httpClient.get(
-        `https://live-proposals-api.ul0sru.easypanel.host/api/v1/contratos/elegiveis?Cpf=${document}`,
+        `/contratos/elegiveis?Cpf=${document}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,

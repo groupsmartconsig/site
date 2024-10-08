@@ -41,9 +41,6 @@ export function DialogForm() {
       }, 2000);
     } catch (error) {
       console.error("Erro:", error);
-      toast.error("OCORREU UM ERRO NA SIMULAÇÃO", {
-        description: "Verifique os dados digitados e tente novamente.",
-      });
     }
   });
 

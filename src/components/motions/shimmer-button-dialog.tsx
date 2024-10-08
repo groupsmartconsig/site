@@ -17,9 +17,9 @@ export function ShimmerButtonDialog({ title, icon }: ShimmerButtonDialogProps) {
     <Dialog>
       <DialogTrigger asChild>
         <div className="z-10 flex items-center justify-center">
-          <ShimmerButton className="shadow-2xl shadow-zinc-800 p-3 md:px-6">
+          <ShimmerButton className="shadow-2xl shadow-zinc-800 py-4 md:py-3 md:px-6">
             <div className="flex items-center gap-2">
-              <span className="whitespace-pre-wrap text-center text-xs sm:text-sm font-medium leading-none tracking-tight text-green-400">
+              <span className="whitespace-pre-wrap text-center text-sm font-semibold leading-none tracking-tight text-green-400">
                 {title}
               </span>
               {icon}

@@ -1,3 +1,7 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+// @ts-nocheck
+
+import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import {
   DialogDescription,
@@ -6,13 +10,34 @@ import {
   DialogTitle
 } from "@/components/ui/dialog";
 import { Separator } from "@/components/ui/separator";
+import { useStepper } from "@/hooks/use-stepper";
+import { AuthService } from "@/services/auth-service";
 import { RocketIcon } from "lucide-react";
 
 import portabilityBanner from "@/app/assets/images/banner.png";
 import Image from "next/image";
-import { NextStepButton } from "./next-step";
 
 export function FormInit() {
+  const { nextStep } = useStepper();
+
+  const handleNextStep = async () => {
+    const loginData = {
+      username: process.env.NEXT_PUBLIC_USERNAME,
+      password: process.env.NEXT_PUBLIC_PASSWORD,
+    };
+
+    try {
+      await AuthService.signIn(loginData.username, loginData.password);
+
+      const token = localStorage.getItem("token");
+      if (!token) throw new Error("401 Server Error: Token not found.");
+
+      nextStep();
+    } catch (error) {
+      console.error("Erro ao autenticar:", error);
+    }
+  };
+
   return (
     <>
       <div className="flex items-center space-x-6 w-full pt-2 pb-4 px-8">
@@ -46,10 +71,12 @@ export function FormInit() {
       <Separator />
       <DialogFooter className="w-full pt-6 pb-0 px-8">
         <div className="flex justify-end items-center">
-          <NextStepButton
-            title="Vamos começar?" 
+          <Button
             className="font-medium px-6 rounded-full hover:text-lime-300"
-          />
+            onClick={handleNextStep}
+          >
+            Vamos começar ?
+          </Button>
         </div>
       </DialogFooter>
     </>

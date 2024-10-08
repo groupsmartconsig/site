@@ -8,12 +8,12 @@ import AnimatedGridPattern from "@/components/ui/animated-grid-pattern";
 
 export function PortabilityDetails() {
   return (
-    <div className="relative flex h-[720px] w-full flex-col items-center justify-center rounded-xl overflow-hidden">
-      <span className="pointer-events-none z-10 whitespace-pre-wrap bg-gradient-to-b from-[#f48c06] via-[#ff2975] to-[#ec3237] bg-clip-text text-center text-6xl px-4 font-bold leading-none tracking-tighter text-transparent">
+    <div className="relative flex h-[780px] max-w-full w-full mx-auto flex-col items-center justify-center rounded-xl overflow-hidden pt-24 md:h-[720px] md:pt-0">
+      <span className="pointer-events-none z-10 whitespace-pre-wrap bg-gradient-to-b from-[#f48c06] via-[#ff2975] to-[#ec3237] bg-clip-text text-center text-5xl font-bold leading-none tracking-tighter text-transparent px-4 sm:text-6xl">
         A melhor opção para você
       </span>
 
-      <ul className="flex flex-col space-y-6 pt-12">
+      <ul className="flex flex-col items-center space-y-6 pt-12 px-6 md:items-start md:px-0">
         <li className="flex gap-2 text-black text-lg">
           <CircleCheckBigIcon className="size-6 text-green-400 mt-0.5" />
           Uma solução que permite transferir sua dívida <br />

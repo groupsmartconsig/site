@@ -16,7 +16,7 @@ export default function Home() {
       <MainContainer />
       <div className="bg-white w-full">
         <InfiniteSliderContent />
-        <div className="max-w-7xl w-full mx-auto flex flex-col items-center space-x-12 py-12 my-16 md:flex-row md:justify-between">
+        <div className="max-w-7xl w-full mx-auto flex flex-col items-center py-12 md:my-16 md:flex-row md:justify-between md:space-x-12">
           <PortabilityExample />
           <PortabilityDetails />
         </div>
@@ -33,7 +33,7 @@ export default function Home() {
       <section className="pt-12 pb-24">
         <ReviewsContainer />
       </section>
-      <div className="max-w-6xl w-full mx-auto py-8 px-4 sm:px-0">
+      <div className="max-w-full w-full mx-auto py-8 px-4 sm:max-w-6xl sm:px-0">
         <FaqAccordion />
         <Footer />
       </div>
