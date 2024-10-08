@@ -1,13 +1,13 @@
+import { BorderBeam } from "@/components/magic-ui/border-beam";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { BorderBeam } from "@/components/ui/border-beam";
 import { cn } from "@/lib/utils";
 
-import AnimatedGridPattern from "@/components/ui/animated-grid-pattern";
+import AnimatedGridPattern from "@/components/magic-ui/animated-grid-pattern";
 
 export function FaqAccordion() {
   return (

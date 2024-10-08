@@ -1,5 +1,5 @@
-import { BorderBeam } from "@/components/ui/border-beam";
-import { DotPattern } from "@/components/ui/dot-pattern";
+import { BorderBeam } from "@/components/magic-ui/border-beam";
+import { DotPattern } from "@/components/magic-ui/dot-pattern";
 import { cn } from "@/lib/utils";
 import {
   FacebookIcon,

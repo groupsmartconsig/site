@@ -3,12 +3,12 @@
 import { cn } from '@/lib/utils';
 import { motion } from 'framer-motion';
 import { HeadsetIcon } from 'lucide-react';
-import { ShimmerButtonDialog } from './shimmer-button-dialog';
+import { FormButtonDialog } from './form-button-dialog';
 
 import elderlyCoupleImg from "@/app/assets/images/elderly-couple.jpg";
 import elderlyFinancesImg from "@/app/assets/images/elderly-finances.jpg";
-import AnimatedGridPattern from "@/components/ui/animated-grid-pattern";
-import GradualSpacing from "@/components/ui/gradual-spacing";
+import AnimatedGridPattern from "@/components/magic-ui/animated-grid-pattern";
+import GradualSpacing from "@/components/magic-ui/gradual-spacing";
 import Image from 'next/image';
 
 export function PortabilityContainer() {
@@ -53,9 +53,9 @@ export function PortabilityContainer() {
         animate={{ opacity: 1.5, y: 0 }}
         transition={{ duration: 0.3, delay: 0.5 }}
       >
-        <ShimmerButtonDialog 
-          title="Fale com a nossa central de atendimento"
-          icon={<HeadsetIcon className="size-4 text-green-400" />}  
+        <FormButtonDialog 
+          title="Falar com a central de atendimento"
+          icon={<HeadsetIcon className="size-4" />}  
         />
       </motion.div>
 

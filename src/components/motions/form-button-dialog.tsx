@@ -1,5 +1,3 @@
-import ShimmerButton from "@/components/ui/shimmer-button";
-
 import { DialogForm } from "../form/stepper";
 import {
   Dialog,
@@ -7,24 +5,24 @@ import {
   DialogTrigger
 } from "../ui/dialog";
 
-interface ShimmerButtonDialogProps {
+import ShinyButton from "../magic-ui/shiny-button";
+
+interface FormDialogProps {
   title: string;
   icon?: React.ReactNode | null;
 }
 
-export function ShimmerButtonDialog({ title, icon }: ShimmerButtonDialogProps) {
+export function FormButtonDialog({ title, icon }: FormDialogProps) {
   return (
     <Dialog>
       <DialogTrigger asChild>
         <div className="z-10 flex items-center justify-center">
-          <ShimmerButton className="shadow-2xl shadow-zinc-800 py-4 md:py-3 md:px-6">
+          <ShinyButton className="bg-gradient-to-r from-green-400 via-emerald-300 to-green-300">
             <div className="flex items-center gap-2">
-              <span className="whitespace-pre-wrap text-center text-sm font-semibold leading-none tracking-tight text-green-400">
-                {title}
-              </span>
+              {title}
               {icon}
             </div>
-          </ShimmerButton>
+          </ShinyButton>
         </div>
       </DialogTrigger>
       <DialogContent className="px-0">

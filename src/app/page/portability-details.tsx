@@ -2,9 +2,9 @@
 
 import { cn } from "@/lib/utils";
 import { CircleCheckBigIcon, CoinsIcon } from "lucide-react";
-import { ShimmerButtonDialog } from "../../components/motions/shimmer-button-dialog";
+import { FormButtonDialog } from "../../components/motions/form-button-dialog";
 
-import AnimatedGridPattern from "@/components/ui/animated-grid-pattern";
+import AnimatedGridPattern from "@/components/magic-ui/animated-grid-pattern";
 
 export function PortabilityDetails() {
   return (
@@ -44,9 +44,9 @@ export function PortabilityDetails() {
       />
       
       <div className="py-12">
-        <ShimmerButtonDialog
+        <FormButtonDialog
           title="Desejo fazer minha portabilidade"
-          icon={<CoinsIcon className="size-4 text-green-400" />}
+          icon={<CoinsIcon className="size-4" />}
         />
       </div>
     </div>

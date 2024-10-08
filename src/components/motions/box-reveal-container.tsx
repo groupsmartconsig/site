@@ -1,6 +1,7 @@
-import BoxReveal from "@/components/ui/box-reveal";
+import BoxReveal from "@/components/magic-ui/box-reveal";
+
 import { Share2Icon } from "lucide-react";
-import { ShimmerButtonDialog } from "./shimmer-button-dialog";
+import { FormButtonDialog } from "./form-button-dialog";
 
 export async function BoxRevealContainer() {
   return (
@@ -58,10 +59,10 @@ export async function BoxRevealContainer() {
       </BoxReveal>
 
       <BoxReveal boxColor={"#18181b"} duration={0.5}>
-        <div className="mt-12 ml-8 sm:ml-0 md:mt-0">
-          <ShimmerButtonDialog 
+        <div className="mt-12 ml-8 sm:ml-0 md:mt-6">
+          <FormButtonDialog 
             title="Realize uma simulação gratuita"
-            icon={<Share2Icon className="size-4 text-green-400" />}
+            icon={<Share2Icon className="size-4" />}
           />
         </div>
       </BoxReveal>

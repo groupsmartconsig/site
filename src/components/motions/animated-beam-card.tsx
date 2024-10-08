@@ -1,12 +1,12 @@
 "use client";
 
-import React, { forwardRef, useRef } from "react";
-
-import { AnimatedBeam } from "@/components/ui/animated-beam";
+import { AnimatedBeam } from "@/components/magic-ui/animated-beam";
 import { cn } from "@/lib/utils";
 import { LockIcon } from "lucide-react";
-import { BorderBeam } from "../ui/border-beam";
-import DotPattern from "../ui/dot-pattern";
+import React, { forwardRef, useRef } from "react";
+import { BorderBeam } from "../magic-ui/border-beam";
+
+import DotPattern from "../magic-ui/dot-pattern";
 
 const Circle = forwardRef<
   HTMLDivElement,

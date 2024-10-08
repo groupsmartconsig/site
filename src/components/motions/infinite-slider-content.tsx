@@ -1,4 +1,5 @@
-import { InfiniteSlider } from '@/components/ui/infinite-slider';
+import { InfiniteSlider } from '@/components/magic-ui/infinite-slider';
+
 import Image from 'next/image';
 
 export function InfiniteSliderContent() {

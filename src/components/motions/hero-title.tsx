@@ -1,8 +1,9 @@
 "use client"
 
 import { motion } from 'framer-motion';
-import RetroGrid from '../ui/retro-grid';
-import { ShimmerButtonDialog } from './shimmer-button-dialog';
+import { FormButtonDialog } from './form-button-dialog';
+
+import RetroGrid from '../magic-ui/retro-grid';
 
 export function HeroTitle() {
   return (
@@ -85,7 +86,7 @@ export function HeroTitle() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}
         >
-          <ShimmerButtonDialog 
+          <FormButtonDialog 
             title="Quero fazer minha simulação agora" 
           />
         </motion.div>

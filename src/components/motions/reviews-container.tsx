@@ -1,4 +1,5 @@
-import Marquee from "@/components/ui/marquee";
+import Marquee from "@/components/magic-ui/marquee";
+
 import { cn } from "@/lib/utils";
 import { Star } from "lucide-react";
 
