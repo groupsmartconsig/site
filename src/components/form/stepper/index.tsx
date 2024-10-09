@@ -10,27 +10,25 @@ export function DialogForm() {
   const [currentStep, setCurrentStep] = useState(0);
 
   return (
-    <>
-      <form>
-        <Stepper
-          steps={[
-            {
-              label: "Instruções para cadastro",
-              content: <FormInit />,
-            },
-            {
-              label: "Formulário de dados pessoais",
-              content: <Form />,
-            },
-            {
-              label: "Instruções para realizar a portabilidade",
-              content: <FormFinished />,
-            }
-          ]}
-          currentStep={currentStep}
-          onStepChange={setCurrentStep}
-        />
-      </form>
-    </>
+    <form>
+      <Stepper
+        steps={[
+          {
+            label: "Instruções para cadastro",
+            content: <FormInit />,
+          },
+          {
+            label: "Formulário de dados pessoais",
+            content: <Form />,
+          },
+          {
+            label: "Instruções para realizar a portabilidade",
+            content: <FormFinished />,
+          }
+        ]}
+        currentStep={currentStep}
+        onStepChange={setCurrentStep}
+      />
+    </form>
   )
 }
