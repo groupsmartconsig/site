@@ -72,6 +72,7 @@ export function FormInit() {
       <DialogFooter className="w-full pt-6 pb-0 px-8">
         <div className="flex justify-end items-center">
           <Button
+            type="button"
             className="font-medium px-6 rounded-full hover:text-lime-300"
             onClick={handleNextStep}
           >

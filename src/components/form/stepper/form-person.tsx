@@ -1,28 +1,51 @@
+import { portabilityFormSchema } from "@/@types/portability";
 import { Button } from "@/components/ui/button";
 import { DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useStepper } from "@/hooks/use-stepper";
 import { cn } from "@/lib/utils";
+import { PortabilityService } from "@/services/proposals-service";
+import { zodResolver } from "@hookform/resolvers/zod";
 import { Loader2Icon, TriangleIcon } from "lucide-react";
-import { useFormContext } from "react-hook-form";
-import type { DialogFormData } from "./index";
+import { useForm } from "react-hook-form";
+import { z } from "zod";
 
 import MaskedInput from "react-input-mask";
+import { toast } from "sonner";
+
+type DialogFormData = z.infer<typeof formSchema>;
+
+const formSchema = z.object({
+  portabilityForm: portabilityFormSchema,
+});
 
 export function Form() {
-  const {
-    trigger,
-    register,
-    formState: { errors, isSubmitting },
-  } = useFormContext<DialogFormData>();
-
   const { nextStep } = useStepper();
+  const {
+    register,
+    handleSubmit,
+    formState: { errors, isSubmitting },
+  } = useForm<DialogFormData>({
+    resolver: zodResolver(formSchema)
+  });
 
-  async function handleNextStep() {
-    const isValid = await trigger("portabilityForm");
-    if (isValid) nextStep();
-  }
+  const handleSubmitForm = handleSubmit(async (data) => {
+    try {
+      const formData = {
+        document: data.portabilityForm.document,
+      };
+
+      await PortabilityService.getContractsByCustomerDocument(formData.document);
+      nextStep();
+    } catch (error) {
+      console.error("Erro:", error);
+      toast.warning("NENHUMA PROPOSTA ENCONTRADA PARA O CPF INFORMADO", {
+        description: "Infelizmente no momento não encontramos propostas de portabilidade para você.",
+        duration: 5000,
+      })
+    }
+  });
 
   return (
     <>
@@ -109,8 +132,9 @@ export function Form() {
 
       <div className="w-full flex justify-end space-x-6 pt-6 border-t">
         <Button
-          type="submit"
+          type="button"
           className="font-medium px-6 rounded-full hover:text-lime-300 mx-8"
+          onClick={handleSubmitForm}
         >
           {!isSubmitting && <span>Simular propostas</span>}
           {isSubmitting && (
