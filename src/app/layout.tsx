@@ -3,6 +3,7 @@ import { Montserrat } from "next/font/google";
 import { Toaster } from "sonner";
 
 import "./globals.css";
+import FacebookPixel from "./page/facebook-pixel";
 
 const montserrat = Montserrat({ subsets: ["latin"] })
 
@@ -55,6 +56,7 @@ export default function RootLayout({
         className={`${montserrat.className} antialiased bg-gradient-to-br from-black to-zinc-950`}
       >
         <main>{children}</main>
+        <FacebookPixel pixelId="1597315194197904" />
         <Toaster position="top-center" richColors />
       </body>
     </html>

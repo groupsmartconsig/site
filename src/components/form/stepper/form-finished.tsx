@@ -23,9 +23,9 @@ export function FormFinished() {
     if (count > 0) {
       const timer = setTimeout(() => setCount(count - 1), 1000)
       return () => clearTimeout(timer)
-    } else {
-      window.location.href = "https://www.redirectmais.com/run/anuncio-teste";
     }
+    
+    window.location.href = "https://www.redirectmais.com/run/anuncio-teste";
   }, [count])
 
   return (
