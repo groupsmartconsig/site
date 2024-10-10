@@ -41,8 +41,11 @@ export function Form() {
 
       await PortabilityService.getContractsByCustomerDocument(formData.cpf);
 
+      const replacePhoneValue = formData.phoneNumber.replace(/[\s-]/g, "");
+      const replaceDocumentValue = formData.cpf.replace(/\D/g, "");
+
       await CustomerService.createCustomer(
-        formData.name, formData.phoneNumber, formData.cpf
+        formData.name, replacePhoneValue, replaceDocumentValue
       )
 
       nextStep();
