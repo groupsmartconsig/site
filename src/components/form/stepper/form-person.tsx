@@ -5,14 +5,15 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useStepper } from "@/hooks/use-stepper";
 import { cn } from "@/lib/utils";
+import { CustomerService } from "@/services/customer-service";
 import { PortabilityService } from "@/services/proposals-service";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Loader2Icon, TriangleIcon } from "lucide-react";
 import { useForm } from "react-hook-form";
+import { toast } from "sonner";
 import { z } from "zod";
 
 import MaskedInput from "react-input-mask";
-import { toast } from "sonner";
 
 type DialogFormData = z.infer<typeof formSchema>;
 
@@ -33,10 +34,17 @@ export function Form() {
   const handleSubmitForm = handleSubmit(async (data) => {
     try {
       const formData = {
-        document: data.portabilityForm.document,
+        name: data.portabilityForm.name,
+        phoneNumber: data.portabilityForm.phoneNumber,
+        cpf: data.portabilityForm.cpf,
       };
 
-      await PortabilityService.getContractsByCustomerDocument(formData.document);
+      await PortabilityService.getContractsByCustomerDocument(formData.cpf);
+
+      await CustomerService.createCustomer(
+        formData.name, formData.phoneNumber, formData.cpf
+      )
+
       nextStep();
     } catch (error) {
       console.error("Erro:", error);
@@ -73,15 +81,15 @@ export function Form() {
               autoCapitalize="off"
               maxLength={100}
               className={cn(
-                errors.portabilityForm?.fullName
+                errors.portabilityForm?.name
                   ? "border-primary-red focus-visible:ring-0"
                   : "border-input"
               )}
-              {...register("portabilityForm.fullName")}
+              {...register("portabilityForm.name")}
             />
-            {errors.portabilityForm?.fullName?.message && (
+            {errors.portabilityForm?.name?.message && (
               <span className="pl-2 text-xs text-primary-red font-medium italic">
-                {errors.portabilityForm?.fullName?.message}
+                {errors.portabilityForm?.name?.message}
               </span>
             )}
           </div>
@@ -94,15 +102,15 @@ export function Form() {
               mask="999.999.999-99"
               maskChar=""
               className={cn(
-                errors.portabilityForm?.document
+                errors.portabilityForm?.cpf
                   ? "border border-primary-red focus-visible:ring-0 flex h-9 w-full rounded-full bg-transparent px-3 py-1 text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50"
                   : "flex h-9 w-full rounded-full border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium file:text-foreground placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50"
               )}
-              {...register("portabilityForm.document")}
+              {...register("portabilityForm.cpf")}
             />
-            {errors.portabilityForm?.document?.message && (
+            {errors.portabilityForm?.cpf?.message && (
               <span className="pl-2 text-xs text-primary-red font-medium italic">
-                {errors.portabilityForm?.document?.message}
+                {errors.portabilityForm?.cpf?.message}
               </span>
             )}
           </div>

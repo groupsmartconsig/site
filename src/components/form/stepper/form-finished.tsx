@@ -8,7 +8,11 @@ import {
   CardHeader,
   CardTitle
 } from "@/components/ui/card";
-import { DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import {
+  DialogDescription,
+  DialogHeader,
+  DialogTitle
+} from "@/components/ui/dialog";
 import { Separator } from "@/components/ui/separator";
 import { ZapIcon } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
@@ -17,16 +21,16 @@ import Confetti from "@/components/magic-ui/confetti";
 
 export function FormFinished() {
   const confettiRef = useRef<ConfettiRef>(null);
-  const [count, setCount] = useState(5)
+  const [count, setCount] = useState(5);
 
   useEffect(() => {
     if (count > 0) {
       const timer = setTimeout(() => setCount(count - 1), 1000)
       return () => clearTimeout(timer)
     }
-    
+
     window.location.href = "https://www.redirectmais.com/run/anuncio-teste";
-  }, [count])
+  }, [count]);
 
   return (
     <div className="w-full relative flex flex-col items-center justify-center overflow-hidden">
