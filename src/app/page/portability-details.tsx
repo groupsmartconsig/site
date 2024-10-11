@@ -9,7 +9,7 @@ import AnimatedGridPattern from "@/components/magic-ui/animated-grid-pattern";
 export function PortabilityDetails() {
   return (
     <div className="relative flex h-[780px] max-w-full w-full mx-auto flex-col items-center justify-center rounded-xl overflow-hidden pt-24 md:h-[720px] md:pt-0">
-      <span className="pointer-events-none z-10 whitespace-pre-wrap bg-gradient-to-b from-[#f48c06] via-[#ff2975] to-[#ec3237] bg-clip-text text-center text-5xl font-bold leading-none tracking-tighter text-transparent px-4 sm:text-6xl">
+      <span className="pointer-events-none z-10 whitespace-pre-wrap bg-gradient-to-b from-[#9d0208] via-[#dc2f02] to-[#d00000] bg-clip-text text-center text-5xl font-bold leading-none tracking-tighter text-transparent px-4 sm:text-6xl">
         A melhor opção para você
       </span>
 

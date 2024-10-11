@@ -8,15 +8,16 @@ export function HeroTitle() {
     <div className="w-full h-[500px] flex items-center overflow-hidden sm:pl-32">
       <div className="text-center sm:space-y-3">
         <motion.h1
-          className="max-w-xs w-full mx-auto font-medium text-2xl text-center bg-gradient-to-b from-[#f48c06] via-[#f42f36] to-[#ec3237] bg-clip-text text-transparent mb-6 md:text-4xl md:max-w-full md:px-0 md:mb-4"
+          className="hidden max-w-xs w-full mx-auto font-medium text-2xl text-center bg-gradient-to-b from-[#f48c06] via-[#f42f36] to-[#ec3237] bg-clip-text text-transparent mb-6 sm:block md:text-4xl md:max-w-full md:px-0 md:mb-4"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           Aposentados e pensionistas do INSS
         </motion.h1>
+
         <motion.p
-          className="max-w-2xl mx-auto w-full font-bold text-2xl text-center text-white px-4 md:text-5xl md:px-0"
+          className="max-w-2xl mx-auto w-full font-bold text-left text-2xl text-white pb-3 md:text-5xl md:pb-0"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}
@@ -24,14 +25,24 @@ export function HeroTitle() {
           Redução de juros e parcela com liberação de valor
         </motion.p>
 
+        <motion.p
+          className="max-w-2xl mx-auto w-full text-left text-white sm:hidden"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+        >
+          Seja qual for a sua necessidade, aqui
+          Smart Consig você encontra as melhores taxas de juros
+        </motion.p>
+
         <motion.div
-          className="pt-8 md:pt-16"
+          className="w-full pt-8 md:pt-16"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}
         >
           <FormButtonDialog
-            title="Quero fazer minha simulação"
+            title="Simule sem compromisso"
           />
         </motion.div>
       </div>
