@@ -16,11 +16,11 @@ export function PortabilityContainer() {
     <div>
       <div className="relative pt-12">
         <GradualSpacing
-          className="hidden bg-gradient-to-b from-[#f48c06] via-[#f42f36] to-[#ec3237] bg-clip-text text-transparent font-bold tracking-tighter sm:block md:text-5xl md:leading-[5rem]"
+          className="hidden bg-gradient-to-b from-[#8a090d] via-[#e42c33] to-[#e42c33] bg-clip-text text-transparent font-bold tracking-tighter sm:block md:text-5xl md:leading-[5rem]"
           text="Portabilidade financeira descomplicada"
         />
         <motion.h1
-          className="text-4xl text-center bg-gradient-to-b from-[#f48c06] via-[#ec3237] to-[#ec3237] bg-clip-text leading-none text-transparent font-bold pb-12 sm:hidden"
+          className="text-4xl text-center bg-gradient-to-b from-[#8a090d] via-[#e42c33] to-[#e42c33] bg-clip-text leading-none text-transparent font-bold pb-12 sm:hidden"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}
@@ -48,10 +48,10 @@ export function PortabilityContainer() {
       </div>
 
       <motion.div
-        className="py-12"
         initial={{ opacity: 0, y: -15 }}
         animate={{ opacity: 1.5, y: 0 }}
         transition={{ duration: 0.3, delay: 0.5 }}
+        className="py-12 sm:flex sm:justify-center sm:items-center"
       >
         <FormButtonDialog 
           title="Falar com a central de atendimento"

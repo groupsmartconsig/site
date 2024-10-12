@@ -8,7 +8,7 @@ export function HeroTitle() {
     <div className="w-full h-[500px] flex items-center overflow-hidden sm:pl-32">
       <div className="text-center sm:space-y-3">
         <motion.h1
-          className="hidden max-w-xs w-full mx-auto font-medium text-2xl text-center bg-gradient-to-b from-[#f48c06] via-[#f42f36] to-[#ec3237] bg-clip-text text-transparent mb-6 sm:block md:text-4xl md:max-w-full md:px-0 md:mb-4"
+          className="hidden max-w-xs w-full mx-auto font-medium text-2xl text-center bg-gradient-to-b from-[#8a090d] via-[#e42c33] to-[#e42c33] bg-clip-text text-transparent mb-6 sm:block md:text-4xl md:max-w-full md:px-0 md:mb-4"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
@@ -36,7 +36,7 @@ export function HeroTitle() {
         </motion.p>
 
         <motion.div
-          className="w-full pt-8 md:pt-16"
+          className="w-full pt-8"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}

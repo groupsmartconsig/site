@@ -8,7 +8,9 @@ import { PortabilityContainer } from "@/components/motions/portability-container
 import { ReviewsContainer } from "@/components/motions/reviews-container";
 import { FaqAccordion } from "./page/faq";
 import { Footer } from "./page/footer";
-import { PortabilityExample } from "./page/portability-example";
+
+import simulation from "@/app/assets/images/simulation-card.png";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -17,7 +19,13 @@ export default function Home() {
       <div className="bg-white w-full">
         <InfiniteSliderContent />
         <div className="max-w-7xl w-full mx-auto flex flex-col items-center py-12 md:my-16 md:flex-row md:justify-between md:space-x-12">
-          <PortabilityExample />
+          <Image 
+            src={simulation}
+            width={1080}
+            height={1920}
+            className="h-[700px] w-auto rounded-xl"
+            alt="Simulação de crédito"
+          />
           <PortabilityDetails />
         </div>
         <div className="max-w-6xl w-full mx-auto grid grid-cols-1 items-center gap-y-16 md:grid-cols-2 md:py-16">

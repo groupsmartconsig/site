@@ -1,6 +1,5 @@
 import BoxReveal from "@/components/magic-ui/box-reveal";
 
-import { Share2Icon } from "lucide-react";
 import { FormButtonDialog } from "./form-button-dialog";
 
 export async function BoxRevealContainer() {
@@ -62,7 +61,6 @@ export async function BoxRevealContainer() {
         <div className="mt-12 ml-8 sm:ml-0 md:mt-6">
           <FormButtonDialog 
             title="Realize uma simulação gratuita"
-            icon={<Share2Icon className="size-4" />}
           />
         </div>
       </BoxReveal>

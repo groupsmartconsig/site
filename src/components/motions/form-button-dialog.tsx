@@ -16,8 +16,8 @@ export function FormButtonDialog({ title, icon }: FormDialogProps) {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <div className="z-10 flex items-center justify-center">
-          <ShinyButton className="w-full bg-gradient-to-r from-green-400 via-emerald-300 to-green-300 rounded-xl sm:rounded-full">
+        <div className="z-10 flex items-center justify-center sm:justify-start">
+          <ShinyButton className="w-full bg-gradient-to-r from-green-400 via-emerald-300 to-green-300 rounded-xl sm:w-auto sm:rounded-full">
             <div className="flex items-center justify-center gap-2">
               {title}
               {icon}
