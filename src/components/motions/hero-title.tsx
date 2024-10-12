@@ -17,7 +17,7 @@ export function HeroTitle() {
         </motion.h1>
 
         <motion.p
-          className="max-w-2xl mx-auto w-full font-bold text-left text-2xl text-white pb-3 md:text-5xl md:pb-0"
+          className="max-w-2xl mx-auto w-full font-bold text-left text-2xl text-[#e42c33] pb-3 md:text-5xl sm:text-white md:pb-0"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}

@@ -12,7 +12,7 @@ import AnimatedGridPattern from "@/components/magic-ui/animated-grid-pattern";
 export function FaqAccordion() {
   return (
     <div
-      className="bg-black h-[600px] w-full relative flex flex-col items-center justify-center border-2 border-zinc-700 rounded-xl overflow-hidden md:h-[540px] md:shadow-xl"
+      className="bg-black h-[600px] w-full relative flex flex-col items-center justify-center rounded-xl overflow-hidden sm:border sm:border-zinc-700 md:h-[540px] md:shadow-xl"
     >
       <div className="w-full flex flex-col space-y-12 py-8 sm:py-0">
         <p className="z-10 whitespace-pre-wrap text-center text-4xl font-medium tracking-tighter bg-gradient-to-b from-[#8a090d] via-[#e42c33] to-[#e42c33] bg-clip-text text-transparent md:text-5xl">
@@ -64,7 +64,12 @@ export function FaqAccordion() {
           "inset-x-0 inset-y-[-30%] h-[200%] skew-y-12",
         )}
       />
-      <BorderBeam size={250} duration={12} delay={9} />
+      <BorderBeam 
+        className="hidden sm:relative sm:flex" 
+        size={250} 
+        duration={12} 
+        delay={9} 
+      />
     </div>
   )
 }
