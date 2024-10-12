@@ -26,7 +26,7 @@ export function HeroTitle() {
         </motion.p>
 
         <motion.p
-          className="max-w-2xl mx-auto w-full text-left text-white sm:hidden"
+          className="max-w-2xl mx-auto w-full text-lg text-left text-black sm:hidden"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}

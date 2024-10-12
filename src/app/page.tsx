@@ -31,11 +31,11 @@ export default function Home() {
         <div className="w-full h-1 bg-gradient-to-r from-primary-red via-[#ffaa40] to-danger-red"></div>
       </div>
       
-      <section className="pt-12 pb-20">
+      <section className="pt-12 pb-20 bg-gradient-to-br from-black to-zinc-950 sm:bg-transparent">
         <ReviewsContainer />
       </section>
       
-      <div className="max-w-full w-full mx-auto py-8 px-4 sm:max-w-6xl sm:px-0">
+      <div className="max-w-full w-full mx-auto py-8 px-4 bg-gradient-to-br from-black to-zinc-950 sm:bg-transparent sm:max-w-6xl sm:px-0">
         <FaqAccordion />
         <Footer />
       </div>

@@ -4,9 +4,16 @@ import Image from 'next/image';
 
 export function InfiniteSliderContent() {
   return (
-    <div className="py-12">
-      <div className='max-w-64 w-full mx-auto text-3xl font-medium py-6 sm:text-4xl sm:text-center sm:font-bold sm:max-w-full'>
-        Única instituição autorizada por todos os Bancos.
+    <div className="bg-gray-100 py-6 sm:bg-white sm:py-12">
+      <div className="w-full mx- flex flex-col items-center space-y-6 py-6">
+        <span className="text-3xl text-center font-bold sm:text-4xl sm:text-center sm:font-bold">
+          Única instituição autorizada por todos os Bancos.
+        </span>
+        <p className="w-full text-center text-base font-medium px-6 sm:max-w-5xl">
+          Somos a única instituição autorizada por todos os bancos para garantir segurança e
+          confiança nas suas operações financeiras. Com a nossa expertise, você tem a tranquilidade
+          de contar com as melhores condições de mercado.
+        </p>
       </div>
       <InfiniteSlider className="h-28 pt-3 sm:h-auto sm:pt-6" gap={24} reverse>
         <Image

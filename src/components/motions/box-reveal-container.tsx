@@ -4,7 +4,7 @@ import { FormButtonDialog } from "./form-button-dialog";
 
 export async function BoxRevealContainer() {
   return (
-    <div className="size-full w-full items-center justify-center overflow-hidden text-black px-4 md:max-w-lg md:px-0">
+    <div className="bg-gray-100 size-full w-full items-center justify-center overflow-hidden text-black py-12 px-4 sm:bg-white md:max-w-lg md:p-0">
       <BoxReveal boxColor={"#18181b"} duration={0.5}>
         <p className="text-4xl text-center font-semibold leading-snug md:text-[3.5rem] md:text-left">
           Quais são os benefícios<span className="text-[#ec3237]">?</span>

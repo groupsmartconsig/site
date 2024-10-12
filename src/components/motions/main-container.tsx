@@ -18,13 +18,13 @@ export function MainContainer() {
         />
         <AnimatedShinySpan />
       </div>
-      <div className="bg-[url('/banner.png')] bg-contain bg-no-repeat p-8 sm:bg-cover sm:bg-[url('/elderly-background-large.jpg')]">
-        <div className="relative flex flex-col items-center h-[600px] overflow-hidden pt-44 sm:items-start sm:pt-12">
+      <div className="bg-[url('/banner.png')] bg-contain bg-no-repeat py-8 px-4 sm:bg-cover sm:bg-[url('/elderly-background-large.jpg')] sm:p-8">
+        <div className="relative flex flex-col items-center h-[540px] mt-6 overflow-hidden pt-44 sm:h-[600px] sm:items-start sm:pt-12">
           <Header />
           <HeroTitle />
         </div>
       </div>
-      <div className="w-full h-1 bg-gradient-to-r from-primary-red via-[#ffaa40] to-danger-red"></div>
+      <div className="hidden sm:block w-full h-1 bg-gradient-to-r from-primary-red via-[#ffaa40] to-danger-red"></div>
     </>
   )
 }

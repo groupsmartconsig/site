@@ -53,7 +53,7 @@ export default function RootLayout({
   return (
     <html lang="pt">
       <body
-        className={`${montserrat.className} antialiased bg-gradient-to-br from-black to-zinc-950`}
+        className={`${montserrat.className} antialiased bg-white sm:bg-gradient-to-br from-black to-zinc-950`}
       >
         <main>{children}</main>
         <FacebookPixel pixelId="1597315194197904" />
