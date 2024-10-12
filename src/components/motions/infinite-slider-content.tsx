@@ -5,7 +5,7 @@ import Image from 'next/image';
 export function InfiniteSliderContent() {
   return (
     <div className="py-12">
-      <div className='max-w-64 w-full mx-auto text-3xl font-medium py-6 sm:text-4xl sm:font-bold sm:max-w-full'>
+      <div className='max-w-64 w-full mx-auto text-3xl font-medium py-6 sm:text-4xl sm:text-center sm:font-bold sm:max-w-full'>
         Única instituição autorizada por todos os Bancos.
       </div>
       <InfiniteSlider className="h-28 pt-3 sm:h-auto sm:pt-6" gap={24} reverse>
