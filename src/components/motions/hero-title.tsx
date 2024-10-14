@@ -31,8 +31,8 @@ export function HeroTitle() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}
         >
-          Seja qual for a sua necessidade, aqui
-          Smart Consig você encontra as melhores taxas de juros
+          Instituição financeira especializada em renegociação. redução de juros e valor de parcela no
+          empréstimo consignado. Simule agora e resgate um valor sem voltar o contrato para o ínicio.
         </motion.p>
 
         <motion.div

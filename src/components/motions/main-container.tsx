@@ -19,7 +19,7 @@ export function MainContainer() {
         <AnimatedShinySpan />
       </div>
       <div className="bg-[url('/banner.png')] bg-contain bg-no-repeat py-8 px-4 sm:bg-cover sm:bg-[url('/elderly-background-large.jpg')] sm:p-8">
-        <div className="relative flex flex-col items-center h-[540px] mt-6 overflow-hidden pt-44 sm:h-[600px] sm:items-start sm:pt-12">
+        <div className="relative flex flex-col items-center h-[540px] mt-6 overflow-hidden pt-52 sm:h-[600px] sm:items-start sm:pt-12">
           <Header />
           <HeroTitle />
         </div>

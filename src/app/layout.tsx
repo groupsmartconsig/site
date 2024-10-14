@@ -5,7 +5,7 @@ import { Toaster } from "sonner";
 import "./globals.css";
 import FacebookPixel from "./page/facebook-pixel";
 
-const montserrat = Montserrat({ subsets: ["latin"] })
+const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
