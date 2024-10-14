@@ -19,6 +19,7 @@ export function SimulationCard() {
         height={4800}
         className="h-[600px] w-auto rounded-xl sm:h-[700px]"
         alt="Simulação de crédito"
+        priority
       />
 
       <div className="px-8 sm:hidden">
