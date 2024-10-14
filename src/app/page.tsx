@@ -9,7 +9,7 @@ import { FaqAccordion } from "./page/faq";
 import { Footer } from "./page/footer";
 import { SimulationCard } from "./page/simulation-card";
 
-export default function Home() {
+export default function LandingPage() {
   return (
     <div>
       <MainContainer />
