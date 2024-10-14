@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const httpClient = axios.create({
-  baseURL: process.env.NEXT_PUBLIC_PROPOSALS_API,
+  baseURL: process.env.NEXT_PUBLIC_DATA_API,
 });
 
 export class PortabilityService {

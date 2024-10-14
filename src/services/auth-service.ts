@@ -10,13 +10,18 @@ const httpClient = axios.create({
 const tenant = process.env.NEXT_PUBLIC_TENANT;
 
 export class AuthService {
-  static async signIn(username: string, password: string) {
+  static async signIn(
+    username: string, 
+    password: string,
+    revokeActiveSessions = true
+  ) {
     try {
       const { data } = await httpClient.post(
         `/${tenant}/auth/login`,
         {
           username,
           password,
+          revokeActiveSessions
         }
       );
 

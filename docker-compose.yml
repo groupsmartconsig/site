@@ -1,0 +1,10 @@
+services:
+
+  smartconsig-site:
+    container_name: smartconsig-site
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: smartconsig-site
+    ports:
+      - "8074:8080"
