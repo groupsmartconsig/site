@@ -22,6 +22,7 @@ export function InfiniteSliderContent() {
           className="h-[120px] w-auto"
           width={1080}
           height={1080}
+          priority
         />
         <Image
           src="/bmg.png"
@@ -29,6 +30,7 @@ export function InfiniteSliderContent() {
           className="h-[120px] w-auto"
           width={1080}
           height={1080}
+          priority
         />
         <Image
           src="/bradesco.png"
@@ -36,6 +38,7 @@ export function InfiniteSliderContent() {
           className="h-[120px] w-auto"
           width={1080}
           height={1080}
+          priority
         />
         <Image
           src="/c6.png"
@@ -43,6 +46,7 @@ export function InfiniteSliderContent() {
           className="h-[120px] w-auto"
           width={1080}
           height={1080}
+          priority
         />
         <Image
           src="/caixa.png"
@@ -50,6 +54,7 @@ export function InfiniteSliderContent() {
           className="h-[120px] w-auto"
           width={1080}
           height={1080}
+          priority
         />
         <Image
           src="/crefisa.png"
@@ -57,6 +62,7 @@ export function InfiniteSliderContent() {
           className="h-[120px] w-auto"
           width={1080}
           height={1080}
+          priority
         />
         <Image
           src="/daycoval.png"
@@ -64,6 +70,7 @@ export function InfiniteSliderContent() {
           className="h-[120px] w-auto"
           width={1080}
           height={1080}
+          priority
         />
         <Image
           src="/itau.png"
@@ -71,6 +78,7 @@ export function InfiniteSliderContent() {
           className="h-[120px] w-auto"
           width={1080}
           height={1080}
+          priority
         />
         <Image
           src="/pan.png"
@@ -78,6 +86,7 @@ export function InfiniteSliderContent() {
           className="h-[120px] w-auto"
           width={1080}
           height={1080}
+          priority
         />
         <Image
           src="/safra.png"
@@ -85,6 +94,7 @@ export function InfiniteSliderContent() {
           className="h-[120px] w-auto"
           width={1080}
           height={1080}
+          priority
         />
         <Image
           src="/santander.png"
@@ -92,6 +102,7 @@ export function InfiniteSliderContent() {
           className="h-[120px] w-auto"
           width={1080}
           height={1080}
+          priority
         />
       </InfiniteSlider>
     </div>

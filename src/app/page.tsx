@@ -15,12 +15,12 @@ export default function Home() {
       <MainContainer />
       <div className="bg-white w-full">
         <InfiniteSliderContent />
-        <div className="max-w-7xl w-full mx-auto flex flex-col items-center py-12 md:my-16 md:flex-row md:justify-between md:space-x-12">
+        <div className="max-w-7xl w-full mx-auto flex flex-col items-center py-0 md:my-16 md:flex-row md:justify-between md:space-x-12">
           <SimulationCard />
           <PortabilityDetails />
         </div>
 
-        <div className="max-w-6xl w-full mx-auto grid grid-cols-1 items-center gap-y-16 md:grid-cols-2 md:py-16">
+        <div className="max-w-6xl w-full mx-auto grid grid-cols-1 items-center md:grid-cols-2 md:py-16">
           <BoxRevealContainer />
           <AnimatedBeamCard />
         </div>
@@ -31,11 +31,11 @@ export default function Home() {
         <div className="w-full h-1 bg-gradient-to-r from-primary-red via-[#ffaa40] to-danger-red"></div>
       </div>
       
-      <section className="pt-12 pb-20 bg-gradient-to-br from-black to-zinc-950 sm:bg-transparent">
+      <section className="pt-12 pb-16 bg-gradient-to-br from-black to-zinc-950 sm:bg-transparent">
         <ReviewsContainer />
       </section>
       
-      <div className="max-w-full w-full mx-auto py-8 px-4 bg-gradient-to-br from-black to-zinc-950 sm:bg-transparent sm:max-w-6xl sm:px-0">
+      <div className="max-w-full w-full mx-auto py-8 px-2 bg-gradient-to-br from-black to-zinc-950 sm:bg-transparent sm:max-w-6xl sm:px-0">
         <FaqAccordion />
         <Footer />
       </div>
